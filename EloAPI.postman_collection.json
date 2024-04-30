@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "4aef7539-1e0c-4e56-8a56-1d2584eb63cc",
+		"name": "EloAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6912407"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/get_rating/Zuckerberg",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/get_rating/player_id=Musk",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"get_rating",
+						"player_id=Musk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Player Example",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"player_id\": \"Musk\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/add_player",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"add_player"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Team Match Example",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"team_a\": [\"Musk\", \"Bezos\"],\r\n    \"team_b\": [\"Zuckerberg\", \"Nadella\"],\r\n    \"score_a\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/update_team_match/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"update_team_match",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Ind. Match Example",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"player_a\": \"Musk\",\r\n    \"player_b\": \"Zuckerberg\",\r\n    \"score_a\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/update_individual_match/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"update_individual_match",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
