@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
 import sys
-sys.path.append('R:/Desktop/elo-api-accelerator/app/')  # Adjust the path to include where main.py is located
+sys.path.append('C:/Desktop/elo-api-accelerator/backend/app/')  # Adjust the path to include where main.py is located
 from main import app
 
 client = TestClient(app)
